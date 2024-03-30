@@ -51,8 +51,18 @@ const NavItems = () => {
 
                  </ul>
                 </div>
-                <Link to= "sign-up" className='lab-btn me-3 d-none d-md-block'>Create Account</Link>
+                <Link to= "/sign-up" className='lab-btn me-3 d-none d-md-block'>Create Account</Link>
                   <Link to="/login" className='d-none d-md-block'>Log In</Link>
+
+                {/*menu toggler*/}
+                <div onClick={()=>setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle?"active":""}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div> 
+
+                 {/*social toggle */}
+                  
             </div>  
             </div>
          </div>
